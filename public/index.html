@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>vue3_ifame_son</title>
+    <script>
+        // window.addEventListener("message", (e) => {
+        //     console.log("我是子组件，我终于成功了-------PostMessage", e)
+        //     if (e.source != window.parent) return;
+        //     let data = {
+        //         status: "我是子组件,我接收到了父组件传来的数据，并通知父组件"
+        //     };
+
+        //     window.parent.postMessage(data, "*");
+        // });
+    </script>
+</head>
+
+<body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>
