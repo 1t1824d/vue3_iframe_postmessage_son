@@ -62,7 +62,7 @@ module.exports = {
         /* 跨域代理 */
         proxy: {
             '/api': {
-                target: 'http://121.40.242.176:10010/api/DataVisualization', //API服务器的地址
+                target: '', //API服务器的地址
                 ws: true, //代理websockets
                 changeOrigin: true, // 虚拟的站点需要更管origin
                 pathRewrite: { //重写路径 比如'/api/aaa/ccc'重写为'/aaa/ccc'
@@ -70,7 +70,7 @@ module.exports = {
                 }
             },
             '/rng': { //这里最好有一个 /
-                target: 'http://45.105.124.130:8081', // 后台接口域名
+                target: '', // 后台接口域名
                 ws: true, //如果要代理 websockets，配置这个参数
                 secure: false, // 如果是https接口，需要配置这个参数
                 changeOrigin: true, //是否跨域
